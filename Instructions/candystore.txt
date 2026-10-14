@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All links Completed</title>
+</head>
+
+<body>
+    <!-- Once you have completed the Assignment, 
+         paste all the links for each section in the spaces below
+         exactly as you have them written on the relevant pages.
+    -->
+
+    <h3>Index page links</h3>
+    <a href="index.html">index</a>
+    <h3>Admin login page links</h3>
+    <a href="login.html">Login</a>
+    <h3>Admin siteManagement page links</h3>
+    <a href="siteManagement.html">Site Management</a>
+
+    <h3>Public landingPage page links</h3>
+    <a href="landingPage.html">Landing Page</a>
+
+    <h3>Products candy page links</h3>
+    <a href="candy.html">Candy</a>
+
+    <h3>Products chocolate page links</h3>
+    <a href="chocolate.html">Chocolate</a>
+
+    <h3>Products jelly page links</h3>
+    <a href="jelly.html">Jelly</a>
+
+</body>
+
+</html>
