@@ -1,0 +1,30 @@
+/* Main Style sheet for Kirk Demo */
+
+/*
+Multi line
+Comment Example
+*/
+/*-------------------------
+Styles for pg. 2
+h1
+h2
+p
+---------------------------*/
+
+body{
+	background-color:gray;
+}
+h1{
+	color:orange;
+	font-size:100px;
+	text-align:right;
+}
+
+h2{
+	color:lightblue;
+	text-align:center;
+}
+
+p{
+	color: 					/*<<<--- purely example*/
+}

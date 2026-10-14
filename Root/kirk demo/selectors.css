@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* There can only be one instance of an ID per page */
+#tours {
+    color: blue;
+}
+
+.walking {
+    color: red;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* .dottedborder{
+    border-width: 5px; 
+    border-style:dotted;
+    border-color:green;
+    background:lightblue; */
+
+/* margin-top:100px;
+    margin-right:150px;
+    margin-bottom:100px;
+    margin-left:80px; */
+/* } */
+
+.dottedborder {
+    /* border-width:5px;
+    border-style:solid;
+    border-color:red; */
+
+    padding: 50px 30px 50px 80px;
+    /* TOP RIGHT BOTTOM LEFT */
+
+    /*
+        padding-top:50px;
+        padding-right:30px;
+        padding-bottom:50px;
+        padding-left:80px; 
+        */
+
+    margin: 100px 150px 100px 80px;
+
+    border: 5px dotted green;
+
+    /* 
+        border-width: 5px; 
+        border-style:dotted;
+        border-color:green;
+        */
+}

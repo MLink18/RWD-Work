@@ -1,0 +1,18 @@
+/* .imgbox{
+    width: 150px;
+    border: 1px solid red;
+} */
+
+img{
+    max-width: 100%;
+    float: left;
+    margin: 0 0 5px 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+.clearfloats{
+    clear:both;
+}

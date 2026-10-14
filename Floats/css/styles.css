@@ -1,0 +1,26 @@
+.box{
+    width: 180px;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.one{
+    background-color:#86048b;
+    float:right;
+}
+
+.two{
+    background-color:#7c080e;
+    float:left;
+}
+
+img{
+    margin:10px;
+}
+
+.clear{
+    clear: both;
+}
