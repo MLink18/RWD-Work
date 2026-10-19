@@ -1,0 +1,36 @@
+html{
+font-size: 1.2em;
+}
+
+*::before, *::after{
+    box-sizing: inherit;
+}
+
+
+article{
+font-size: 1.5em;
+}
+
+
+p{
+font-size: 2em;
+}
+
+p.rems{
+    font-size: 2rem;
+}
+
+.child{
+    box-sizing: content-box;
+}
+
+section{
+    height:350px;
+    width:600px;
+    background: #cdcdcd;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
