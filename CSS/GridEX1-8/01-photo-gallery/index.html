@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1 · Photo gallery</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 1 · Your first grid</p>
+    <h1>Photo gallery</h1>
+    <p>Turn a plain list of photos into a tidy three-column gallery.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Make <code>.gallery</code> a grid container.</li>
+      <li>Give it <strong>three columns, each 250px wide</strong>, using <code>grid-template-columns</code>.</li>
+      <li>Add a <strong>20px gap</strong> between the photos.</li>
+      <li>Give each <code>.photo .swatch</code> a height of 180px so the photos show up.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> The gallery hugs the left edge. Centre the whole grid inside <code>.gallery</code> with one property (it moves the grid, not the items).</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p>Rows are created automatically, so you only need to describe the columns. For the bonus, look at <code>justify-content</code>.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace">
+    <section class="gallery">
+      <figure class="photo"><div class="swatch"></div><figcaption>Harbour at dawn</figcaption></figure>
+      <figure class="photo"><div class="swatch s2"></div><figcaption>Autumn trail</figcaption></figure>
+      <figure class="photo"><div class="swatch s3"></div><figcaption>Night skyline</figcaption></figure>
+      <figure class="photo"><div class="swatch s4"></div><figcaption>Lighthouse</figcaption></figure>
+      <figure class="photo"><div class="swatch s5"></div><figcaption>Market stalls</figcaption></figure>
+      <figure class="photo"><div class="swatch s6"></div><figcaption>Lavender field</figcaption></figure>
+      <figure class="photo"><div class="swatch s2"></div><figcaption>Beach fire</figcaption></figure>
+      <figure class="photo"><div class="swatch"></div><figcaption>Morning fog</figcaption></figure>
+      <figure class="photo"><div class="swatch s4"></div><figcaption>Tide pools</figcaption></figure>
+    </section>
+  </main>
+
+</body>
+</html>
