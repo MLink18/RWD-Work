@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2 · Blog layout</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 2 · fr and repeat()</p>
+    <h1>Blog layout</h1>
+    <p>Build a page with a fixed sidebar and a flexible content area, then lay out the posts inside it.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Make <code>.layout</code> a grid with a <strong>260px sidebar</strong> and a main column that takes <strong>all the remaining space</strong>. Use a 32px gap.</li>
+      <li>Make <code>.posts</code> a grid of <strong>three equal columns</strong> using <code>repeat()</code> and the <code>fr</code> unit, with a 24px gap.</li>
+      <li>Resize your browser: the sidebar should stay 260px while the main column stretches and shrinks.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> Replace <code>260px</code> with <code>1fr</code> and the main column with <code>3fr</code>. What changes when you resize now? Then try <code>repeat(3, minmax(180px, 1fr))</code> on the posts and shrink the window.</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p><code>1fr</code> means “one share of the leftover space.” A fixed track plus one <code>1fr</code> track gives the classic sidebar layout.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace layout">
+    <aside class="sidebar box navy">
+      <h3>About this blog</h3>
+      <p>Notes on front-end development, written by people still learning.</p>
+      <h3>Topics</h3>
+      <p>CSS · HTML · Accessibility · JavaScript</p>
+    </aside>
+
+    <section class="content">
+      <h2>Latest posts</h2>
+      <div class="posts">
+        <article class="card"><div class="swatch"></div><h3>Grid vs Flexbox</h3><p>When to pick each layout tool.</p></article>
+        <article class="card"><div class="swatch s2"></div><h3>The fr unit</h3><p>Sharing out space the easy way.</p></article>
+        <article class="card"><div class="swatch s3"></div><h3>Naming areas</h3><p>Drawing a layout with strings.</p></article>
+        <article class="card"><div class="swatch s4"></div><h3>DevTools tips</h3><p>See your grid lines in the browser.</p></article>
+        <article class="card"><div class="swatch s5"></div><h3>Gap explained</h3><p>Why margins aren’t needed any more.</p></article>
+        <article class="card"><div class="swatch s6"></div><h3>minmax()</h3><p>Columns with a floor and a ceiling.</p></article>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
