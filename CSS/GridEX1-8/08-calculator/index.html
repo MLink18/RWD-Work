@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8 · Calculator (capstone)</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 8 · Capstone</p>
+    <h1>Calculator keypad</h1>
+    <p>Put everything together: equal tracks, placement by line number, span and alignment. (It only needs to look right. No JavaScript.)</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Centre <code>.calculator</code> inside <code>.stage</code> using Grid.</li>
+      <li>Make <code>.calculator</code> a grid of <strong>4 equal columns</strong>, every row <strong>72px</strong> tall, with a 10px gap.</li>
+      <li>Make <code>.display</code> span the <strong>full width</strong> using line numbers, and make it taller than the buttons (96px works).</li>
+      <li>Make the <code>0</code> key (<code>.zero</code>) <strong>two columns wide</strong>.</li>
+      <li>Make the <code>=</code> key (<code>.equals</code>) <strong>two rows tall</strong>, so it fills the bottom of the right-hand column, beside the <code>0</code> row and the bracket row.</li>
+      <li>Centre each key’s label inside the key with Grid.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> Rewrite the keypad layout with <code>grid-template-areas</code> instead of span. Which version is easier to read?</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p>The HTML order matters: the <code>=</code> key comes right after <code>.</code>, so it starts on the <code>0</code> row and spans down into the last row. Look at where each key lands before you add the spans.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace stage">
+    <div class="calculator">
+      <output class="display">1,234.5</output>
+
+      <button class="key fn" type="button">AC</button>
+      <button class="key fn" type="button">±</button>
+      <button class="key fn" type="button">%</button>
+      <button class="key op" type="button">÷</button>
+
+      <button class="key" type="button">7</button>
+      <button class="key" type="button">8</button>
+      <button class="key" type="button">9</button>
+      <button class="key op" type="button">×</button>
+
+      <button class="key" type="button">4</button>
+      <button class="key" type="button">5</button>
+      <button class="key" type="button">6</button>
+      <button class="key op" type="button">−</button>
+
+      <button class="key" type="button">1</button>
+      <button class="key" type="button">2</button>
+      <button class="key" type="button">3</button>
+      <button class="key op" type="button">+</button>
+
+      <button class="key zero" type="button">0</button>
+      <button class="key" type="button">.</button>
+      <button class="key op equals" type="button">=</button>
+
+      <button class="key fn" type="button">(</button>
+      <button class="key fn" type="button">)</button>
+      <button class="key fn" type="button">⌫</button>
+    </div>
+  </main>
+
+</body>
+</html>

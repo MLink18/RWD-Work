@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5 · Page layout with named areas</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 5 · grid-template-areas</p>
+    <h1>Page layout with named areas</h1>
+    <p>Draw a full page layout with strings, <span class="strikethrough">then rearrange it for small screens without touching the HTML</span>.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Give each part of <code>.page</code> a name with <code>grid-area</code>: <code>header</code>, <code>nav</code>, <code>main</code>, <code>aside</code>, <code>footer</code>.</li>
+      <li>Make <code>.page</code> a grid with columns <strong>200px 1fr 240px</strong>, rows <strong>auto 1fr auto</strong>, a 16px gap and a <code>min-height</code> of 80vh.</li>
+      <li>Use <code>grid-template-areas</code> so the header and footer span all three columns, with nav, main and aside in the middle row.</li>
+      <li>Add a media query for screens <strong>700px wide or less</strong>: one column, everything stacked in this order: header, nav, main, aside, footer.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> <span class="strikethrough">Add a tablet layout (701px–1000px) with two columns, where the nav runs down the left side and the aside sits <em>under</em> main.</span></p>
+
+    <details>
+      <summary>Hint</summary>
+      <p>Each string is one row, each word is one column. Repeat a name to make it span. <span class="strikethrough">Inside the media query you only need to redefine <code>grid-template-columns</code>, <code>grid-template-rows</code> and <code>grid-template-areas</code>.</span></p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <div class="workspace page">
+    <header class="site-header box orange">
+      <strong>GridCo</strong> · Making layouts less painful
+    </header>
+    <nav class="site-nav box navy">
+      <p>Home</p>
+      <p>Tutorials</p>
+      <p>Exercises</p>
+      <p>About</p>
+    </nav>
+    <main class="site-main card">
+      <h2>Welcome</h2>
+      <p>This main area grows to fill the space between the sidebar and the extras column. Make your browser narrower to see the layout change.</p>
+      <p>Notice that the HTML order never changes. Only the CSS does.</p>
+    </main>
+    <aside class="site-aside box pale">
+      <h3>Tip of the day</h3>
+      <p>A dot (.) in grid-template-areas leaves a cell empty.</p>
+    </aside>
+    <footer class="site-footer box sand">
+      © 2026 GridCo
+    </footer>
+  </div>
+
+</body>
+</html>

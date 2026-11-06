@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6 · Responsive cards</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 6 · auto-fit and minmax()</p>
+    <h1>Responsive product cards</h1>
+    <p>Build a card grid that changes its number of columns to fit the screen, without a single media query.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Make <code>.cards</code> a grid whose columns are <strong>at least 240px</strong> and share any extra space, with as many columns as fit. Use <code>repeat(auto-fit, minmax(…))</code> and a 24px gap.</li>
+      <li>Resize the browser from wide to phone size. The columns should drop from 4 to 3 to 2 to 1 by themselves.</li>
+      <li>The “Add to cart” buttons don’t line up because the descriptions are different lengths. Make each <code>.card</code> a grid with rows <strong>auto 1fr auto</strong> (image, text, button) so every button sits at the bottom and a 12px gap.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> The second section only has two cards. Use <code>auto-fit</code> on <code>.few.fit</code> and <code>auto-fill</code> on <code>.few.fill</code>. On a wide screen, what’s the difference?</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p>Cards in the same row are stretched to the same height by default. Once a card is a grid, a <code>1fr</code> middle row soaks up the extra height and pushes the button down.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace">
+    <section class="cards">
+      <article class="card"><div class="swatch"></div><div><h3>Desk lamp</h3><p>Warm light, adjustable arm.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s2"></div><div><h3>Notebook</h3><p>Dot grid paper, 200 pages, lies flat when open, with a ribbon marker and an elastic band to keep it closed.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s3"></div><div><h3>Headphones</h3><p>Noise cancelling with a 30-hour battery.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s4"></div><div><h3>Plant pot</h3><p>Ceramic.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s5"></div><div><h3>Mug</h3><p>Holds 350 ml and keeps coffee warm for longer than you’d expect.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s6"></div><div><h3>Keyboard</h3><p>Mechanical, quiet switches.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch"></div><div><h3>Monitor stand</h3><p>Raises your screen to eye level and has a drawer underneath.</p></div><a class="button" href="#">Add to cart</a></article>
+      <article class="card"><div class="swatch s2"></div><div><h3>Cable tidy</h3><p>Set of five.</p></div><a class="button" href="#">Add to cart</a></article>
+    </section>
+
+    <h2 class="section-title">Bonus: auto-fit</h2>
+    <section class="few fit">
+      <div class="box">Card A</div>
+      <div class="box orange">Card B</div>
+    </section>
+
+    <h2 class="section-title">Bonus: auto-fill</h2>
+    <section class="few fill">
+      <div class="box">Card A</div>
+      <div class="box orange">Card B</div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 7 · Alignment</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 7 · Aligning items</p>
+    <h1>Centring and alignment</h1>
+    <p>Practise the difference between moving items inside their cells (<code>*-items</code>, <code>*-self</code>) and moving the whole grid (<code>*-content</code>).</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li><strong>Part A:</strong> Make <code>.stage</code> a grid (it already has a height) and centre <code>.login</code> both ways with <strong>one</strong> property.</li>
+      <li><strong>Part B:</strong> Make <code>.icons</code> a grid with <strong>4 columns of 120px</strong>, rows of 120px and a 12px gap.</li>
+      <li>Centre the whole icon grid horizontally inside <code>.icons</code> (move the grid, not the items).</li>
+      <li>The icons are 60px, smaller than their 120px cells. Centre every icon inside its cell.</li>
+      <li>Move just the <code>.special</code> icon to the <strong>top-right corner</strong> of its cell.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> Turn on the DevTools grid overlay for <code>.icons</code> so you can see the cells. Try <code>justify-content: space-between</code> and <code>space-evenly</code>.</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p><code>justify-*</code> works along the row (left–right). <code>align-*</code> works along the column (up–down). <code>place-items</code> sets both at once.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace">
+    <h2 class="part">Part A · Centre anything</h2>
+    <section class="stage stage-box">
+      <form class="login card">
+        <h3>Sign in</h3>
+        <p>Centred with two lines of CSS.</p>
+        <button class="button" type="button">Continue</button>
+      </form>
+    </section>
+
+    <h2 class="part">Part B · Items in their cells</h2>
+    <section class="icons icon-box">
+      <div class="icon box">A</div>
+      <div class="icon box">B</div>
+      <div class="icon box orange special">★</div>
+      <div class="icon box">D</div>
+      <div class="icon box pale">E</div>
+      <div class="icon box pale">F</div>
+      <div class="icon box pale">G</div>
+      <div class="icon box pale">H</div>
+    </section>
+  </main>
+
+</body>
+</html>

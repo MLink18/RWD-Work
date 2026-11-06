@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3 · Magazine front page</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 3 · Placing items by line number</p>
+    <h1>Magazine front page</h1>
+    <p>Place each story in an exact spot on a 4-column grid using <code>grid-column</code> and <code>grid-row</code>.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Make <code>.magazine</code> a grid with <strong>4 equal columns</strong>, <strong>two rows of 220px</strong>, and a 16px gap.</li>
+      <li><code>.lead</code>: from column line <strong>1 to 3</strong> and row line <strong>1 to 3</strong> (a 2 × 2 block in the top-left).</li>
+      <li><code>.side-a</code>: column lines <strong>3 to 5</strong>, row 1. <code>.side-b</code>: column lines <strong>3 to 5</strong>, row 2.</li>
+      <li><code>.banner</code>: the <strong>full width</strong> of the grid on row 3. Use a negative line number.</li>
+      <li>Don’t place the four <code>.brief-story</code> items at all. Check where the browser puts them.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> Open DevTools, select <code>.magazine</code> and turn on the grid overlay with line numbers. Then move <code>.lead</code> to the right-hand side by changing only line numbers.</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p>A 4-column grid has 5 column lines. <code>1 / -1</code> always means “first line to last line.” Rows you didn’t define (row 3 onwards) are created automatically with an <code>auto</code> height.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace magazine">
+    <article class="lead box navy">
+      <p class="kicker">Cover story</p>
+      <h2>The layout tool we waited twenty years for</h2>
+      <p>How CSS Grid changed the way we build pages.</p>
+    </article>
+    <article class="side-a box orange"><p class="kicker">Interview</p><h3>A day with a design systems team</h3></article>
+    <article class="side-b box"><p class="kicker">Tutorial</p><h3>Ten layouts, ten lines of CSS</h3></article>
+    <aside class="banner box sand"><strong>Advertisement:</strong> Learn Grid in a weekend workshop</aside>
+    <article class="brief-story box pale"><h3>Subgrid lands everywhere</h3></article>
+    <article class="brief-story box pale"><h3>Gap for flexbox</h3></article>
+    <article class="brief-story box pale"><h3>Container queries</h3></article>
+    <article class="brief-story box pale"><h3>Reader letters</h3></article>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+
+
+
+/* Presentation details */
+.kicker {
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.lead h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.lead p:last-child {
+  font-weight: 400;
+  color: #b8c0d9;
+}
+
+.brief-story h3 {
+  margin: 0;
+  font-size: 1rem;
+}

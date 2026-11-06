@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4 · Featured mosaic</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brief">
+    <p class="tag">Exercise 4 · span and auto-placement</p>
+    <h1>Featured mosaic</h1>
+    <p>Make some tiles bigger than others using <code>span</code>. You don’t say where the tiles go, only how big they are.</p>
+
+    <h2>Your tasks (in style.css)</h2>
+    <ol>
+      <li>Make <code>.mosaic</code> a grid with <strong>4 equal columns</strong> and a 12px gap.</li>
+      <li>Use <code>grid-auto-rows</code> so <strong>every row is 150px</strong> tall, including rows the browser creates.</li>
+      <li><code>.wide</code> tiles span <strong>2 columns</strong>.</li>
+      <li><code>.tall</code> tiles span <strong>2 rows</strong>.</li>
+      <li><code>.big</code> tiles span <strong>2 columns and 2 rows</strong>.</li>
+    </ol>
+
+    <p class="bonus"><strong>Bonus:</strong> You’ll probably see empty holes in the mosaic. Add <code>grid-auto-flow: dense</code> to <code>.mosaic</code> and watch the smaller tiles fill the gaps. Then think about why this can be a problem for keyboard and screen-reader users.</p>
+
+    <details>
+      <summary>Hint</summary>
+      <p><code>grid-column: span 2</code> means “be 2 columns wide, wherever you land.” <code>grid-template-rows</code> only sizes the rows you list; <code>grid-auto-rows</code> sizes the rest.</p>
+    </details>
+
+    <a class="back" href="../index.html">← All exercises</a>
+  </header>
+
+  <main class="workspace mosaic">
+    <div class="tile swatch big">1 · big</div>
+    <div class="tile swatch s2">2</div>
+    <div class="tile swatch s3 tall">3 · tall</div>
+    <div class="tile swatch s4">4</div>
+    <div class="tile swatch s5 wide">5 · wide</div>
+    <div class="tile swatch s6">6</div>
+    <div class="tile swatch wide">7 · wide</div>
+    <div class="tile swatch s2">8</div>
+    <div class="tile swatch s4 tall">9 · tall</div>
+    <div class="tile swatch s3">10</div>
+    <div class="tile swatch s6 big">11 · big</div>
+    <div class="tile swatch s5">12</div>
+    <div class="tile swatch">13</div>
+  </main>
+
+</body>
+</html>

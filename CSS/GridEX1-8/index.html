@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid practice exercises</title>
+  <link rel="stylesheet" href="shared/base.css">
+  <style>
+    .list { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .list a { display: block; padding: 20px; background: #fdfcf9; border: 1px solid #e2dfd6; border-radius: 12px; color: inherit; text-decoration: none; }
+    .list a:hover { border-color: #3d63dd; }
+    .list .num { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #b8551a; }
+    .list h3 { margin: 4px 0; color: #161b2e; }
+    .list p { margin: 0; color: #4a5066; }
+  </style>
+</head>
+<body>
+  <header class="brief">
+    <p class="tag">Practice set</p>
+    <h1>CSS Grid exercises</h1>
+    <p>Eight exercises that follow the “Intro to CSS Grid” deck. Each folder has an <code>index.html</code> with the task brief and a <code>style.css</code> for you to work in.</p>
+    <p><strong>To practise:</strong> using <code>style.css</code>, build the layout yourself. Colours and fonts come from <code>shared/base.css</code>, so you only write layout code. Compare your result with <code>target.png</code> in each folder.</p>
+  </header>
+
+  <nav class="list">
+    <a href="01-photo-gallery/index.html"><span class="num">01 · display, columns, gap</span><h3>Photo gallery</h3><p>Your first three-column grid.</p></a>
+    <a href="02-blog-layout/index.html"><span class="num">02 · fr and repeat()</span><h3>Blog layout</h3><p>Fixed sidebar, flexible content.</p></a>
+    <a href="03-magazine-front/index.html"><span class="num">03 · line numbers</span><h3>Magazine front page</h3><p>Place stories in exact spots.</p></a>
+    <a href="04-featured-mosaic/index.html"><span class="num">04 · span and dense</span><h3>Featured mosaic</h3><p>Tiles of different sizes.</p></a>
+    <a href="05-page-layout/index.html"><span class="num">05 · grid-template-areas</span><h3>Page layout</h3><p>Named areas plus a mobile layout.</p></a>
+    <a href="06-responsive-cards/index.html"><span class="num">06 · auto-fit, minmax()</span><h3>Responsive cards</h3><p>Responsive with no media queries.</p></a>
+    <a href="07-alignment/index.html"><span class="num">07 · alignment</span><h3>Centring and alignment</h3><p>items, content and self.</p></a>
+    <a href="08-calculator/index.html"><span class="num">08 · capstone</span><h3>Calculator keypad</h3><p>Everything together.</p></a>
+  </nav>
+</body>
+</html>
