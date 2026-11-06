@@ -1,0 +1,21 @@
+.gallery{
+  display: grid;
+  grid-template-columns:repeat(3, 250px);
+  gap:20px;
+}
+
+/* Small tidy-up: figures have default margins in browsers. */
+.photo {
+  margin: 0.1em;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #4a5066;
+}
+
+.photo .swatch{
+  height:180px;
+}
+
