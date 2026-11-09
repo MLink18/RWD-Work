@@ -1,0 +1,141 @@
+/* EXERCISE 5 — Starter */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f4ef;
+  color: #1d1f24;
+}
+
+/* Two columns: fixed sidebar + flexible main */
+.layout {
+ 
+  
+}
+
+.sidebar {
+ 
+  padding: 24px;
+  background: #14161c;
+  color: #f6f4ef;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar nav {
+  
+  
+ 
+}
+
+.sidebar a {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #b9bcc6;
+  text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #262a35;
+  color: #f6f4ef;
+}
+
+.main {
+  
+ 
+  padding: 32px;
+ 
+ 
+  
+}
+
+.main h1 {
+  margin: 0 0 8px;
+}
+
+/* Media object: avatar + body */
+.comment {
+  
+ 
+  
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e0dbcf;
+  border-radius: 12px;
+}
+
+.avatar {
+  
+ 
+ 
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.comment-body {
+ 
+ 
+ 
+  
+}
+
+/* Name left, date right */
+.comment-meta {
+  
+  
+  
+ 
+}
+
+.comment-meta time {
+  font-size: 0.85rem;
+  color: #6b7080;
+}
+
+.comment-body p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Only this one item moves to the right end of the column */
+.reply {
+ 
+  padding: 6px 14px;
+  border: 1px solid #d6d1c4;
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.reply:hover {
+  border-color: #ff8a3d;
+}
+
+/* Small screens: sidebar on top */
+@media (max-width: 700px) {
+  .layout {
+  
+  }
+
+  .sidebar {
+    
+  }
+
+  .sidebar nav {
+   
+    
+  }
+}

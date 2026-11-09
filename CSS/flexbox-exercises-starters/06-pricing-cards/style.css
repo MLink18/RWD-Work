@@ -1,0 +1,123 @@
+/* EXERCISE 6 — Starter */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f4ef;
+  color: #1d1f24;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+/* Row of cards that wraps and stays centered */
+.plans {
+  
+  
+  
+
+}
+
+/* Each card is itself a column */
+.plan {
+ 
+  
+  
+  
+  
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e0dbcf;
+  border-radius: 16px;
+}
+
+.popular {
+  border: 2px solid #ff8a3d;
+}
+
+.badge {
+  
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #ffe3cf;
+  color: #a5470d;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.plan h2 {
+  margin: 0;
+}
+
+/* Big number and "/month" share a text baseline */
+.price {
+ 
+  
+ 
+  margin: 0;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.per {
+  color: #6b7080;
+}
+
+.features {
+  
+ 
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features li::before {
+  content: "✓ ";
+  color: #1f6fc2;
+  font-weight: 700;
+}
+
+/* margin-top: auto soaks up all free space above the button,
+   pushing it to the bottom of every card */
+.btn {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: #14161c;
+  color: #f6f4ef;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.popular .btn {
+  background: #ff8a3d;
+  color: #14161c;
+}
+
+/* Small screens: popular plan first, without touching the HTML */
+@media (max-width: 640px) {
+  .popular {
+    order: -1;
+  }
+
+  .plan {
+    max-width: none;
+  }
+}

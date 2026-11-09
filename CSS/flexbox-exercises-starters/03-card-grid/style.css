@@ -1,0 +1,75 @@
+/* EXERCISE 3 — Starter */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f4ef;
+  color: #1d1f24;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* Cards wrap onto new lines instead of squeezing */
+.cards {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1em;
+  /* justify-items: center; */
+  /* align-items: center; */
+  justify-content: flex-start;
+  /* justify-items: center; */
+}
+
+.card {
+  display: flex;
+  flex: 1 1 250px;
+  flex-wrap: wrap;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e0dbcf;
+  border-radius: 12px;
+}
+
+/* Icon and title side by side, vertically centered */
+.card-header {
+  display:flex;
+  align-items: center;
+  gap:1em;
+  align-items: flex-start;
+}
+
+.icon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #ffe3cf;
+  font-size: 1.3rem;
+ 
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.card p {
+  display: flex;
+  justify-content:;
+  margin: 16px 0 0;
+  line-height: 1.5;
+  color: #5c6270;
+}
+
+

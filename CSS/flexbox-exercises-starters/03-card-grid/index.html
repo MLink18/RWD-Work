@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+  EXERCISE 3 — Wrapping card grid
+  ---------------------------------------------------------------
+  Goal: Lay out six cards in a row that wraps onto new lines as the
+  window gets narrower. Cards should be equal width on each row and
+  never narrower than about 250px. No media queries allowed!
+
+  Properties to practise: flex-wrap, gap, flex (grow / shrink / basis).
+
+  Steps:
+  1. Make .cards a flex container that is allowed to wrap.
+  2. Use gap for the spacing between cards (not margins).
+  3. Give each .card  flex: 1 1 250px  — what does each number do?
+  4. Inside each card, put the emoji icon and the title side by side
+     (.card-header), vertically centered.
+
+  Think about: why does the last row's card(s) stretch wider than the
+  others? (Answer at the bottom of style.css.)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3 · Card grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Our services </h1>
+
+    <section class="cards">
+      <article class="card">
+        <div class="card-header"><span class="icon">🎨</span><h2>Design</h2></div>
+        <p>Interfaces that are clear, accessible and pleasant to use.</p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="icon">💻</span><h2>Development</h2></div>
+        <p>Fast, responsive websites built with modern HTML, CSS and JavaScript.</p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="icon">📈</span><h2>SEO</h2></div>
+        <p>Help people find your site.</p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="icon">🛒</span><h2>E-commerce</h2></div>
+        <p>Online stores with secure checkout and simple product management.</p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="icon">🔧</span><h2>Maintenance</h2></div>
+        <p>Updates, backups and fixes so you can sleep at night.</p>
+      </article>
+      <article class="card">
+        <div class="card-header"><span class="icon">🎓</span><h2>Training</h2></div>
+        <p>Workshops that teach your team to update the site themselves.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

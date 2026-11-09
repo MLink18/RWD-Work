@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  EXERCISE 5 — Sidebar layout + comment list
+  ---------------------------------------------------------------
+  Goal: Build a two-column layout: a fixed-width sidebar and a main
+  area that takes the remaining width. In the main area, style each
+  comment as a "media object": avatar on the left, text on the right.
+
+  Properties to practise: flex: none vs flex: 1, flex-basis,
+  align-items: flex-start, align-self, flex-direction on small screens.
+
+  Steps:
+  1. Make .layout a flex row. The sidebar is exactly 240px wide and must
+     NEVER shrink; the main area grows to fill the rest.
+  2. Make each .comment a flex row with a gap. The avatar keeps its size
+     (it must not get squashed by long text). Align the avatar to the
+     top of the comment, not the middle.
+  3. In .comment-meta, put the author name on the left and the date on
+     the right.
+  4. The "Reply" button should sit at the right end of the comment
+     body only (try align-self on the button).
+  5. Below 700px wide, stack the sidebar on top of the main area.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5 · Sidebar and comments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Forum</h2>
+      <nav>
+        <a href="#" class="active">All topics</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Career</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <h1>Why won't my div center?</h1>
+
+      <article class="comment">
+        <div class="avatar" style="background:#ff8a3d">AK</div>
+        <div class="comment-body">
+          <div class="comment-meta">
+            <strong>Amara K.</strong>
+            <time>2 hours ago</time>
+          </div>
+          <p>Put display: flex on the parent, then justify-content and align-items: center. Make sure the parent has a height!</p>
+          <button class="reply">Reply</button>
+        </div>
+      </article>
+
+      <article class="comment">
+        <div class="avatar" style="background:#4da3ff">JL</div>
+        <div class="comment-body">
+          <div class="comment-meta">
+            <strong>Jonas L.</strong>
+            <time>1 hour ago</time>
+          </div>
+          <p>Also check you're styling the right element. The flex properties for centering go on the container, not on the thing you want centered. I lost an afternoon to that once, so now I always add a temporary outline to the parent to see how big it really is before I start moving things around.</p>
+          <button class="reply">Reply</button>
+        </div>
+      </article>
+
+      <article class="comment">
+        <div class="avatar" style="background:#1d1f24">PR</div>
+        <div class="comment-body">
+          <div class="comment-meta">
+            <strong>Priya R.</strong>
+            <time>20 minutes ago</time>
+          </div>
+          <p>Thanks, that worked!</p>
+          <button class="reply">Reply</button>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

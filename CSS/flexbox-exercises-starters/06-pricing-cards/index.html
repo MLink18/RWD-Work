@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+  EXERCISE 6 — Pricing cards (challenge)
+  ---------------------------------------------------------------
+  Goal: Three pricing plans side by side. The cards have different
+  amounts of text, but they must all be the same height AND their
+  "Choose plan" buttons must line up along the bottom.
+
+  Properties to practise: everything so far, plus margin-top: auto
+  inside a column flex container, and order.
+
+  Steps:
+  1. Lay out .plans as a wrapping row with a gap; each plan should be
+     between ~260px and ~340px wide, and the row centered on the page.
+  2. Notice the cards are already equal height. Why? (align-items default)
+  3. Make each .plan a column. Push the button to the bottom of the card
+     using margin-top: auto on the button.
+  4. In .price, line up the big number and "/month" along their text
+     baseline.
+  5. Make the "Popular" plan appear FIRST on small screens without
+     changing the HTML (hint: order).
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6 · Pricing cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Choose a plan</h1>
+
+    <section class="plans">
+      <article class="plan">
+        <h2>Starter</h2>
+        <p class="price"><span class="amount">$0</span><span class="per">/month</span></p>
+        <ul class="features">
+          <li>1 project</li>
+          <li>Community support</li>
+        </ul>
+        <a href="#" class="btn">Choose plan</a>
+      </article>
+
+      <article class="plan popular">
+        <span class="badge">Popular</span>
+        <h2>Pro</h2>
+        <p class="price"><span class="amount">$12</span><span class="per">/month</span></p>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>Custom domains</li>
+          <li>Email support</li>
+          <li>Analytics dashboard</li>
+          <li>Team sharing for up to 5 people</li>
+        </ul>
+        <a href="#" class="btn">Choose plan</a>
+      </article>
+
+      <article class="plan">
+        <h2>Business</h2>
+        <p class="price"><span class="amount">$49</span><span class="per">/month</span></p>
+        <ul class="features">
+          <li>Everything in Pro</li>
+          <li>Single sign-on</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn">Choose plan</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

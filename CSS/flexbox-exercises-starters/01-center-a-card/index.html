@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+  EXERCISE 1 — Center a card
+  ---------------------------------------------------------------
+  Goal: Center the login card horizontally AND vertically in the
+  browser window, whatever the window size.
+
+  Properties to practise: display, justify-content, align-items
+  (and min-height on the container).
+
+  Steps:
+  1. Make <main> a flex container.
+  2. Give it a height of at least the full viewport (100vh).
+  3. Center the card on the main axis and on the cross axis.
+  4. Inside the card, stack the form fields in a column with a gap
+     between them (flex-direction + gap).
+
+  Done when: resizing the window keeps the card dead center.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1 · Center a card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <h1>Welcome back</h1>
+      <form class="form">
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="••••••••">
+        </label>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

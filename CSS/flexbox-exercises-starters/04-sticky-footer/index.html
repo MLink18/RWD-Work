@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+  EXERCISE 4 — Footer that sticks to the bottom
+  ---------------------------------------------------------------
+  Goal: This page has very little content. Right now the footer floats
+  halfway up the screen. Make the footer sit at the bottom of the
+  window when content is short, but still come after the content
+  when the content is long.
+
+  Properties to practise: flex-direction: column, min-height, flex: 1.
+
+  Steps:
+  1. Make <body> a flex container with a column direction.
+  2. Give it a minimum height of the full viewport.
+  3. Let <main> grow to fill all leftover space.
+  4. In the footer, put the copyright on the left and the social links
+     on the right (a small space-between row).
+
+  Test: click "Add a paragraph" several times. The footer should be
+  pushed down with the content, never overlap it.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4 · Sticky footer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <strong>My Blog</strong>
+  </header>
+
+  <main id="main">
+    <h1>A short post</h1>
+    <p>Not much to read here yet.</p>
+    <button type="button" onclick="addParagraph()">Add a paragraph</button>
+    <a href="index.html" >Reset</a>
+  </main>
+
+  <footer>
+    <p>© 2026 My Blog</p>
+    <ul class="social">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">RSS</a></li>
+    </ul>
+  </footer>
+</body>
+<script>
+  function addParagraph(){
+    console.log("inside");
+    let main = document.getElementById('main');
+    main.insertAdjacentHTML('beforeend', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.</p>');
+  }
+</script>
+</html>
