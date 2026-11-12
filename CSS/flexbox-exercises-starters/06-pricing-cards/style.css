@@ -24,19 +24,19 @@ body {
 
 /* Row of cards that wraps and stays centered */
 .plans {
-  
-  
-  
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1.5em;
 }
 
 /* Each card is itself a column */
 .plan {
- 
-  
-  
-  
-  
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 340px;
+  flex:1; 
   padding: 32px;
   background: #ffffff;
   border: 1px solid #e0dbcf;
@@ -48,8 +48,9 @@ body {
 }
 
 .badge {
-  
+  max-width: max-content;
   padding: 4px 10px;
+  margin: 0 0 0.5em;
   border-radius: 999px;
   background: #ffe3cf;
   color: #a5470d;
@@ -63,15 +64,15 @@ body {
 
 /* Big number and "/month" share a text baseline */
 .price {
- 
-  
- 
+  display: flex;
+  align-items: baseline;
   margin: 0;
 }
 
 .amount {
   font-size: 2.5rem;
   font-weight: 800;
+  padding:5px;
 }
 
 .per {
@@ -79,11 +80,11 @@ body {
 }
 
 .features {
-  
- 
-  
+  display:flex;
+  flex-direction: column;
+  gap: 0.2em;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.5em;
   list-style: none;
 }
 

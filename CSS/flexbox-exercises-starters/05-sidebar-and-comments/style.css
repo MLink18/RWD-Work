@@ -13,15 +13,19 @@ body {
 
 /* Two columns: fixed sidebar + flexible main */
 .layout {
- 
-  
+  display: flex;
+  flex-wrap: row wrap;
 }
 
 .sidebar {
- 
+  flex: none;
+  width: 240px;
   padding: 24px;
   background: #14161c;
   color: #f6f4ef;
+  border-radius: 10px;
+  min-height: 100vh;
+  margin: 0.05em;
 }
 
 .sidebar h2 {
@@ -29,12 +33,13 @@ body {
 }
 
 .sidebar nav {
-  
-  
- 
+  display: flex;
+  flex-direction: column;
+  gap:0.2em ; 
 }
 
 .sidebar a {
+  display: flex;
   padding: 8px 12px;
   border-radius: 6px;
   color: #b9bcc6;
@@ -48,12 +53,10 @@ body {
 }
 
 .main {
-  
- 
+  display: flex;
+  flex-direction: column;
   padding: 32px;
- 
- 
-  
+  gap:1em; 
 }
 
 .main h1 {
@@ -62,9 +65,8 @@ body {
 
 /* Media object: avatar + body */
 .comment {
-  
- 
-  
+  display: flex;
+  gap:1em;
   padding: 20px;
   background: #ffffff;
   border: 1px solid #e0dbcf;
@@ -72,11 +74,10 @@ body {
 }
 
 .avatar {
-  
- 
- 
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 48px;
+  min-width: 48px;
   height: 48px;
   border-radius: 50%;
   color: #ffffff;
@@ -84,18 +85,15 @@ body {
 }
 
 .comment-body {
- 
- 
- 
-  
+ display: flex;
+ flex-direction: column;
+ flex: 1;  
 }
 
 /* Name left, date right */
 .comment-meta {
-  
-  
-  
- 
+  display: flex;
+  justify-content: space-between;
 }
 
 .comment-meta time {
@@ -110,7 +108,8 @@ body {
 
 /* Only this one item moves to the right end of the column */
 .reply {
- 
+  display: flex;
+  align-self: flex-end;
   padding: 6px 14px;
   border: 1px solid #d6d1c4;
   border-radius: 999px;
@@ -127,15 +126,18 @@ body {
 /* Small screens: sidebar on top */
 @media (max-width: 700px) {
   .layout {
-  
+    display:flex;
+    flex-direction: column;
   }
 
   .sidebar {
-    
+    width: 100%;
+    height: auto;
   }
 
   .sidebar nav {
-   
-    
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 0.5em;
   }
 }
