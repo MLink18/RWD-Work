@@ -1,4 +1,7 @@
-
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+}
 
 
 
@@ -14,15 +17,25 @@
 }
 
 .few{
-    display:grid;
-    gap:16px;
-    margin-bottom: 24px;
+  display:grid;
+  gap:16px;
+  margin-bottom: 24px;
 }
 
 .fit{
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .fill{
-   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+
+
+@media (max-width:480px) {
+  .cards.swatch{
+    flex-flow: column-reverse;
+  }
+
+  
 }
